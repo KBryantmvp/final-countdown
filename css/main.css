@@ -1,0 +1,66 @@
+/*@font-face {
+    font-family: GameOfThrones;
+    src: url(game_of_thrones.ttf);
+}*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    /*font-family: GameOfThrones;*/
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../img/got_season6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#timerdiv {
+    color: white;
+    font-size: 8em;
+}
+
+#seconds {
+    font-size: 0.7em;
+}
+
+p {
+    color: white;
+    font-size: 3em;
+}
+
+@media (max-width: 680px) {
+    #timerdiv {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+        font-size: 7em;
+    }
+
+    #days {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    #timerdiv {
+        font-size: 6em;
+    }
+}
+
+@media (max-width: 400px) {
+    #timerdiv {
+        font-size: 5.5em;
+    }
+}
