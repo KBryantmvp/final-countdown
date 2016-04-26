@@ -9,9 +9,10 @@ $(function(){
 
     function getCountdown() {
         var todaysDate = new Date();
-        var gotPremiere = new Date(2016, 3, 24, 20, 0, 0);
-        // var gotPremiere = new Date(2016, 2, 11, 22, 50, 30);
-        var countdown = gotPremiere - todaysDate;
+        var ultraMiami = new Date(2017, 2, 24, 16, 0, 0);
+
+        var countdown = ultraMiami - todaysDate;
+        //Checking some stuff with GH-PAGES
 
         var seconds = addZero(Math.floor((countdown/1000) % 60));
         var minutes = addZero(Math.floor((countdown/(1000*60)) % 60));
@@ -25,9 +26,6 @@ $(function(){
             'hours': hours,
             'days': days
         };
-        // var days = Math.floor(countdown%);
-        // var countdownFormatted = addZero(countdown.getHours()) + ":" + addZero(countdown.getMinutes()) + ":" + addZero(countdown.getSeconds());
-        // $('p').html(countdownFormatted);
     }
 
     function initializeTimer() {
