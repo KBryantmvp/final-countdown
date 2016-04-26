@@ -1,8 +1,3 @@
-/*@font-face {
-    font-family: GameOfThrones;
-    src: url(game_of_thrones.ttf);
-}*/
-
 html, body {
     width: 100%;
     height: 100%;
@@ -12,13 +7,12 @@ html, body {
 }
 
 body {
-    /*font-family: GameOfThrones;*/
     font-family: 'Raleway', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url("../img/got_season6.jpg");
+    background-image: url("../img/main_stage_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,10 +27,10 @@ body {
     font-size: 0.7em;
 }
 
-p {
+/*p {
     color: white;
     font-size: 3em;
-}
+}*/
 
 @media (max-width: 680px) {
     #timerdiv {
